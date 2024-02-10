@@ -1,0 +1,151 @@
+body {
+    background-color:rgb(243, 229, 216) ;
+    color: hsl(30, 10%, 34%);
+    font-family: "Outfit";
+}
+
+*{
+    box-sizing: border-box;
+}
+
+ul li:before { 
+    content:"•"; 
+    font-size: 15pt;
+    padding-right: 10px;
+    color: hsl(332, 51%, 32%);
+
+}
+
+ul { 
+    list-style: none;
+}
+
+ol {
+    counter-reset: section;
+    list-style: none;
+}
+
+ol li::before {
+    counter-increment: section;
+    content: counter(section) ".";
+    color: hsl(14, 45%, 36%); 
+    font-weight: 700;
+    padding-right: 12px;
+    padding-left: 8px;
+  }
+
+ ol li, ul li {
+    display: flex;
+  }
+
+.omelette{
+    display: block;
+    margin: auto;
+    max-width: 100%;
+    border-radius: 12px;
+    margin-bottom: 30px;
+}
+
+.top{
+    margin: 130px;
+}
+
+
+.content{
+    background-color: white;
+    border-radius: 23px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 40px;
+    width: 735px;
+    max-width: 100%;
+}
+
+.content h1{
+    font-size: 40px;
+    color: hsl(24, 5%, 18%);
+    font-family: 'Young Serif', serif;
+    font-weight: 400;
+    margin-top: 0;
+    margin-bottom: 15px;
+}
+
+.content p {
+    font-size: 16px;
+    color: hsl(30, 10%, 34%);
+    margin-top: 0px;
+    margin-bottom: 35px;
+    line-height: 1.5;
+}
+
+.purple{
+    background-color: rgb(255,245,250);
+    border-radius: 15px;
+    padding: 8px;
+    color: hsl(332, 51%, 32%);
+    font-weight: 200;
+    margin-bottom: 27px;
+}
+
+.pt {
+    margin: 16px;
+    font-weight: 600;
+    padding-left: 10px;
+    font-size: 20px;
+}
+
+.brown-pink{
+    color: hsl(14, 45%, 36%);
+    font-family: 'Young Serif', serif;
+    font-weight: 400;
+    font-size: 28px;
+    margin-bottom: 20px;
+    margin-top: 0;
+
+}
+
+.ingredients {
+    font-size: 16px;
+    padding: 0;
+}
+
+li{
+    margin-bottom: 12px;
+}
+
+.list{
+    display: block;
+}
+
+.horizontal-line{
+    background-color: hsl(30, 18%, 87%);
+    border: none;
+    height: 1px;
+    margin: 33px 0 25px;
+}
+
+.quanity{
+    padding: 13px 30px;
+    display: inline-block;
+    width: 50%;
+}
+
+.quanity-horizontal-line{
+    margin: 0px;
+    background-color: hsl(30, 18%, 87%);
+    border: none;
+    height: 1px;
+}
+
+.quanity-grams{
+    padding: 13px 30px;
+    display: inline-block;
+    color: hsl(14, 45%, 36%);
+    font-weight: 700;
+}
+
+.codedby{
+    font-size: 11px;
+    text-align: center;
+    padding: 20px;
+}
